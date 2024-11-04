@@ -12,7 +12,7 @@
 | External traffic intensity | $46.8$ MBps | Platoon length $N$| $7$ trucks |
 
 
-##Details on network model:
+## Details on network model:
 
 In the Centralized Control (CC) and Hybrid Control (HC) scenarios, we consider the BSs collocated with the RSUs, and all the vehicles in the platoon keep a stable connection with the same BS. Thus, we assume stable coverage and simultaneous handover of all the vehicles to a new BS. The wireless resources are shared with other users, such as other vehicles or humans. BS employs the RoundRobin Radio Resource Management scheme for DL, meaning all the connected UEs that request data transmission are assigned the same share of the resources. 
 
@@ -27,7 +27,7 @@ The channel reliability includes the LoS effects vital for V2X communication due
 
 ## How to run the simulation
 
-Executables are in `simulation.py`. 
+Executables are in `simulation.py`. Run via `python3 simulation.py` from the source folder.
 
 `set1()`, `set2()`, `set3()`, and `set4()` run simulations for all inputs combinations. 
 
