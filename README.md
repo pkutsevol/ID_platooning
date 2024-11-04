@@ -1,7 +1,7 @@
 # ID_platooning
-Simulation framework for testing applying identification codes for distributed control verification in cellular setup.
+## Simulation framework for testing applying identification codes for distributed control verification in cellular setup.
 
-Simulation Numerical Parameters:
+##  Simulation Numerical Parameters:
 | Parameter | Value | Parameter | Value |
 |-----------|--------|-----------|--------|
 | Simapling period $\Delta$| $10$ ms | Control cost weights $w_d, w_v, w_T$ | $1000, 1, 1$ |
@@ -12,7 +12,7 @@ Simulation Numerical Parameters:
 | External traffic intensity | $46.8$ MBps | Platoon length $N$| $7$ trucks |
 
 
-Details on network model:
+##Details on network model:
 
 In the Centralized Control (CC) and Hybrid Control (HC) scenarios, we consider the BSs collocated with the RSUs, and all the vehicles in the platoon keep a stable connection with the same BS. Thus, we assume stable coverage and simultaneous handover of all the vehicles to a new BS. The wireless resources are shared with other users, such as other vehicles or humans. BS employs the RoundRobin Radio Resource Management scheme for DL, meaning all the connected UEs that request data transmission are assigned the same share of the resources. 
 
@@ -24,3 +24,11 @@ Other users generate Poisson traffic with constant average intensity, consuming 
 
 The channel reliability includes the LoS effects vital for V2X communication due to high mobility in the corresponding scenarios. V2V connections are affected more drastically by LoS conditions. This fact favors prioritizing V2I links for collaboration. For each vehicle, we model the current channel with a 2-state Markov chain corresponding to LoS and nLoS conditions. Markov chain is defined by the transition probabilities $p_{LoSnLoS}$ and $p_{nLoSLos}$. The probabilities of remaining in the same state are residuals. The uplink and downlink channels transit to LoS or nLoS simultaneously since it is a geometrical effect that depends on the relative positions of the FVs and the BS. The error probabilities for LoS and nLoS in both downlink and uplink channels are set as parameters. Note that we require reliability. Thus, the BS retransmits lost DL packets.
 
+
+## How to run the simulation
+
+Executables are in `simulation.py`. 
+
+`set1()`, `set2()`, `set3()`, and `set4()` run simulations for all inputs combinations. 
+
+`set1()` and `set2()` are with velocity trace, `set3()` and `set4()` - for braking,  `set1()` and `set3()` - for 4 trucks, `set2()` and `set4()` - for 7 trucks. 
