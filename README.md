@@ -4,7 +4,7 @@
 ##  Simulation Numerical Parameters:
 | Parameter | Value | Parameter | Value |
 |-----------|--------|-----------|--------|
-| Simapling period $\Delta$| $10$ ms | Control cost weights $w_d, w_v, w_T$ | $1000, 1, 1$ |
+| Sampling period $\Delta$| $10$ ms | Control cost weights $w_d, w_v, w_T$ | $1000, 1, 1$ |
 | Dynamic model parameters $\Theta_i, delta_i, k_{e_i}$ | $-3.6\times10^{-3}, 1.48\times10^{-5}, 0.148\times10^{-3}$ | Radio resources pool | $52$ Physical Resource Blocks |
 | Error covariance components | $0.02$ | Markov Chain transition probabilities | LoS -> nLoS: $0.1$, nLoS -> LoS: $0.5$ |
 | Error rates in LoS, nLoS | Data: $0.001, 0.1$, Control: $0.0001, 0.001$ |  Message length | $100$ B |
